@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tech Club</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://images.unsplash.com">
+</head>
+<body>
+  <!-- Top Bar / Nav -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="#">TechBiren<span>Club</span></a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#events">Events</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#join">Join</a>
+      </nav>
+      <button class="hamburger" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <h1>Learn. Build. Grow.</h1>
+      <p>We’re a community of learners building real projects together.</p>
+      <a href="#join" class="btn">Become a Member</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="container grid-2">
+      <img
+        src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.1.0"
+        alt="Laptop half open">
+      <div>
+        <h2>About the Club</h2>
+        <p>Weekly meetups, coding sprints, and workshops on web, data and AI. Beginners welcome—bring curiosity!</p>
+        <ul class="ticks">
+          <li>Hands-on projects</li>
+          <li>Peer reviews</li>
+          <li>Mentor sessions</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events -->
+  <section id="events" class="events">
+    <div class="container">
+      <h2>Upcoming Events</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1559136653-1b21e0b4b4c2?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.1.0" alt="">
+          <div class="card-body">
+            <h3>Flexbox Workshop</h3>
+            <p>Master modern layout with real exercises.</p>
+            <span class="badge">Sat 3 PM</span>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.1.0" alt="">
+          <div class="card-body">
+            <h3>Project Night</h3>
+            <p>Build with teammates; ship a feature by EOD.</p>
+            <span class="badge">Wed 6 PM</span>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.1.0" alt="">
+          <div class="card-body">
+            <h3>Intro to Git</h3>
+            <p>Branching, PRs, and good commit messages.</p>
+            <span class="badge">Sun 11 AM</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <h2>Gallery</h2>
+      <div class="grid-3">
+        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.1.0" alt="">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.1.0" alt="">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.1.0" alt="">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.1.0" alt="">
+        <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.1.0" alt="">
+        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.1.0" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- Join -->
+  <section id="join" class="join">
+    <div class="container grid-2">
+      <div>
+        <h2>Join the Club</h2>
+        <p>Membership includes access to private Slack, starter kits, and monthly challenges.</p>
+      </div>
+      <form class="join-form" onsubmit="event.preventDefault(); alert('Thanks for joining!');">
+        <input type="text" placeholder="Your name" required>
+        <input type="email" placeholder="Email address" required>
+        <button class="btn">Join Now</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2025 Tech Club By BIREN</p>
+      <div class="social">
+        <a href="#">Twitter</a>
+        <a href="#">GitHub</a>
+        <a href="#">Discord</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple mobile menu (no external JS file needed here)
+    const btn = document.querySelector('.hamburger');
+    const nav = document.querySelector('.nav-links');
+    btn.addEventListener('click', () => nav.classList.toggle('open'));
+  </script>
+</body>
+</html>
